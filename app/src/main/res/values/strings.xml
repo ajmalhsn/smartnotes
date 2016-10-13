@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Smart notes</string>
+    <string name="quiz">Quiz</string>
+    <string name="view">View</string>
+    <string name="add">Add</string>
+    <string name="definition">Definition</string>
+    <string name="term">Term</string>
+    <string name="delete">Delete</string>
+    <string-array name="set" font-size="15dp">
+        <item>Engineering</item>
+        <item>Medical</item>
+        <item>Arts</item>
+        <item>Management</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ajmal.project1.MainActivity">
+
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/term"
+        android:hint="@string/term"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/set_menu"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:id="@+id/btnAdd"
+        android:onClick="AddToDatabase"
+        android:layout_alignTop="@+id/btnView"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_vertical"
+        android:textStyle="normal|bold"
+        android:textColorHighlight="@color/accent_material_light"
+        android:elevation="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/defn"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:layout_alignEnd="@+id/term"
+        android:layout_below="@+id/term"
+        android:hint="@string/definition" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view"
+        android:id="@+id/btnView"
+        android:onClick="ViewOfData"
+        android:layout_below="@+id/set_menu"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:elevation="12dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quiz"
+        android:id="@+id/Quiz"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete all"
+        android:id="@+id/delbtn"
+        android:layout_below="@+id/set_menu"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold"
+        android:onClick="deletedata"
+        android:elevation="12dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/set_menu"
+        android:transitionGroup="true"
+        android:popupElevation="20dp"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        android:backgroundTint="@color/abc_secondary_text_material_light"
+        android:layout_below="@+id/defn"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
